@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.18.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="masayk.github.io">
+<title>RubyMotion - masayk.github.io</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="/"><img src="" width="60" height="60" alt="masayk.github.io"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">RubyMotion</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-02-09">February 09, 2017</time></span>
+			<section itemprop="entry-text">
+				
+
+<p>Welcome to RubyMotion
+<a href="http://www.rubymotion.com/developer-center/guides/getting-started/">http://www.rubymotion.com/developer-center/guides/getting-started/</a></p>
+
+<p>$ sudo motion update</p>
+
+<p>motion &#x2013;version</p>
+
+<h1 id="hello-world">Hello World</h1>
+
+<p>$ motion create Hello</p>
+
+<h1 id="sample">Sample</h1>
+
+<p><a href="https://github.com/HipByte/RubyMotionSamples">https://github.com/HipByte/RubyMotionSamples</a></p>
+
+<h1 id="developer-center">Developer Center</h1>
+
+<p><a href="http://www.rubymotion.com/developer-center/">http://www.rubymotion.com/developer-center/</a></p>
+
+<p><a href="http://tutorial.rubymotion.jp/">http://tutorial.rubymotion.jp/</a></p>
+
+<h1 id="rakefile">Rakefile</h1>
+
+<p>プロジェクトの設定はRakefileに書くらしい。</p>
+
+<p>パスの設定をしているっぽい。
+$:.unshift(&ldquo;/Library/RubyMotion/lib&rdquo;)</p>
+
+<h2 id="frameworks">frameworks</h2>
+
+<p>app.frameworks += [&lsquo;AVFoundation&rsquo;]
+デフォルト値は [&ldquo;UIKit&rdquo;, &ldquo;Foundation&rdquo;, &ldquo;CoreGraphics&rdquo;] です。</p>
+
+<h1 id="ios">ios</h1>
+
+<p>UIViewController</p>
+
+<h2 id="microphone-input">microphone input</h2>
+
+<p><a href="http://stackoverflow.com/questions/4239073/how-to-listen-to-mic-input-and-analyse-in-real-time">http://stackoverflow.com/questions/4239073/how-to-listen-to-mic-input-and-analyse-in-real-time</a></p>
+
+<p>aurioTouch2というサンプルプログラムがある
+Remote IOというのを使っているらしい。</p>
+
+<p>Core Audio の中にAudio Unitがある。</p>
+
+<h1 id="実機">実機</h1>
+
+<p>rake device</p>
+
+<h1 id="コーディングメモ">コーディングメモ</h1>
+
+<p>これでログが出せるらしい。
+puts &ldquo;Hello again!&rdquo;</p>
+
+<p>Read-Eval-Print-Loop (REPL)</p>
+
+<h1 id="auto-layout">Auto Layout</h1>
+
+<p>Visual Format という記法が用意されている
+RM にはそのVisual Formatをラップした motion-layout という Gem がある</p>
+
+<h2 id="visual-format">Visual Format</h2>
+
+<pre><code>Motion::Layout.new do |layout|
+  layout.view self.view
+  layout.metrics height: 120
+  layout.subviews yellow: @yellowView
+  layout.vertical   &quot;[yellow(height)]|&quot;
+  layout.horizontal &quot;|[yellow]|&quot;
+end
+
+Motion::Layout.new do |layout|
+  layout.view @yellowView
+  layout.subviews red: @redView,  blue: @blueView
+  layout.vertical   &quot;|-[red]-|&quot;
+  layout.vertical   &quot;|-[blue]-|&quot;
+  layout.horizontal &quot;|-[red]-[blue(==red)]-|&quot;
+end
+</code></pre>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<a href="https://twitter.com/masayk" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/masayk/" target="_blank">GitHub</a>
+		</div>
+		<div class="copyright">Copyright &copy; masayk All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

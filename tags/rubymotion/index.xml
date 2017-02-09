@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rubymotion on masayk.github.io</title>
+    <link>http://masayk.github.io/tags/rubymotion/index.xml</link>
+    <description>Recent content in Rubymotion on masayk.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>masayk All rights reserved.</copyright>
+    <atom:link href="http://masayk.github.io/tags/rubymotion/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>RubyMotion</title>
+      <link>http://masayk.github.io/tech/rubymotion/</link>
+      <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://masayk.github.io/tech/rubymotion/</guid>
+      <description>
+
+&lt;p&gt;Welcome to RubyMotion
+&lt;a href=&#34;http://www.rubymotion.com/developer-center/guides/getting-started/&#34;&gt;http://www.rubymotion.com/developer-center/guides/getting-started/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;$ sudo motion update&lt;/p&gt;
+
+&lt;p&gt;motion &amp;#x2013;version&lt;/p&gt;
+
+&lt;h1 id=&#34;hello-world&#34;&gt;Hello World&lt;/h1&gt;
+
+&lt;p&gt;$ motion create Hello&lt;/p&gt;
+
+&lt;h1 id=&#34;sample&#34;&gt;Sample&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/HipByte/RubyMotionSamples&#34;&gt;https://github.com/HipByte/RubyMotionSamples&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;developer-center&#34;&gt;Developer Center&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.rubymotion.com/developer-center/&#34;&gt;http://www.rubymotion.com/developer-center/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://tutorial.rubymotion.jp/&#34;&gt;http://tutorial.rubymotion.jp/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;rakefile&#34;&gt;Rakefile&lt;/h1&gt;
+
+&lt;p&gt;プロジェクトの設定はRakefileに書くらしい。&lt;/p&gt;
+
+&lt;p&gt;パスの設定をしているっぽい。
+$:.unshift(&amp;ldquo;/Library/RubyMotion/lib&amp;rdquo;)&lt;/p&gt;
+
+&lt;h2 id=&#34;frameworks&#34;&gt;frameworks&lt;/h2&gt;
+
+&lt;p&gt;app.frameworks += [&amp;lsquo;AVFoundation&amp;rsquo;]
+デフォルト値は [&amp;ldquo;UIKit&amp;rdquo;, &amp;ldquo;Foundation&amp;rdquo;, &amp;ldquo;CoreGraphics&amp;rdquo;] です。&lt;/p&gt;
+
+&lt;h1 id=&#34;ios&#34;&gt;ios&lt;/h1&gt;
+
+&lt;p&gt;UIViewController&lt;/p&gt;
+
+&lt;h2 id=&#34;microphone-input&#34;&gt;microphone input&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/4239073/how-to-listen-to-mic-input-and-analyse-in-real-time&#34;&gt;http://stackoverflow.com/questions/4239073/how-to-listen-to-mic-input-and-analyse-in-real-time&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;aurioTouch2というサンプルプログラムがある
+Remote IOというのを使っているらしい。&lt;/p&gt;
+
+&lt;p&gt;Core Audio の中にAudio Unitがある。&lt;/p&gt;
+
+&lt;h1 id=&#34;実機&#34;&gt;実機&lt;/h1&gt;
+
+&lt;p&gt;rake device&lt;/p&gt;
+
+&lt;h1 id=&#34;コーディングメモ&#34;&gt;コーディングメモ&lt;/h1&gt;
+
+&lt;p&gt;これでログが出せるらしい。
+puts &amp;ldquo;Hello again!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Read-Eval-Print-Loop (REPL)&lt;/p&gt;
+
+&lt;h1 id=&#34;auto-layout&#34;&gt;Auto Layout&lt;/h1&gt;
+
+&lt;p&gt;Visual Format という記法が用意されている
+RM にはそのVisual Formatをラップした motion-layout という Gem がある&lt;/p&gt;
+
+&lt;h2 id=&#34;visual-format&#34;&gt;Visual Format&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;Motion::Layout.new do |layout|
+  layout.view self.view
+  layout.metrics height: 120
+  layout.subviews yellow: @yellowView
+  layout.vertical   &amp;quot;[yellow(height)]|&amp;quot;
+  layout.horizontal &amp;quot;|[yellow]|&amp;quot;
+end
+
+Motion::Layout.new do |layout|
+  layout.view @yellowView
+  layout.subviews red: @redView,  blue: @blueView
+  layout.vertical   &amp;quot;|-[red]-|&amp;quot;
+  layout.vertical   &amp;quot;|-[blue]-|&amp;quot;
+  layout.horizontal &amp;quot;|-[red]-[blue(==red)]-|&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

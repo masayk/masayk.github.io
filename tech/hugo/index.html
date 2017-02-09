@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/css/skeleton.css">
 <link rel="stylesheet" href="/css/custom.css">
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="masayk.github.io">
-<title>masayk.github.io</title>
+<title>Blogging with Org-Mode and Hugo - masayk.github.io</title>
 </head>
 <body>
 
@@ -20,32 +20,53 @@
 		<div class="header-logo">
 			<a href="/"><img src="" width="60" height="60" alt="masayk.github.io"></a>
 		</div>
-		<h1 class="site-title">masayk.github.io</h1>
+		
 	</header>
 
 
 	<main role="main">
-
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="/tech/hugo/">Blogging with Org-Mode and Hugo</a></h2>
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">Blogging with Org-Mode and Hugo</h1>
 			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-02-09">February 09, 2017</time></span>
-		</article>
+			<section itemprop="entry-text">
+				
 
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="/tech/rubymotion/">RubyMotion</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-02-09">February 09, 2017</time></span>
-		</article>
+<h1 id="hugo-el">hugo.el</h1>
 
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="/about/">about</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-02-09">February 09, 2017</time></span>
-		</article>
+<p><a href="http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/">http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/</a></p>
 
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="/post/test/">test</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="2016-11-03">November 03, 2016</time></span>
-		</article>
+<h1 id="theme">theme</h1>
 
+<p><a href="https://github.com/rakuishi/hugo-zen">https://github.com/rakuishi/hugo-zen</a></p>
+
+<h1 id="write">write</h1>
+
+<pre><code>\* Blogging with Org-Mode and Hugo
+:PROPERTIES:
+:TITLE:    Blogging with Org-Mode and Hugo
+:HUGO_TAGS: hugo, emacs
+:HUGO_TOPICS: tech
+:HUGO_FILE: tech/hugo.md
+:HUGO_DATE: [2017-02-09 Thu 21:43]
+:END:
+
+hogehoge
+</code></pre>
+
+<h1 id="export">export</h1>
+
+<p>M-x hugo</p>
+
+<h1 id="check">check</h1>
+
+<pre><code>$ hugo server --theme=hugo-zen --buildDrafts --watch
+$ hugo server --theme=vienna --buildDrafts --watch
+</code></pre>
+
+<p><a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a></p>
+
+			</section>
+		</article>
 	</main>
 
 
@@ -69,4 +90,3 @@
 
 </body>
 </html>
-

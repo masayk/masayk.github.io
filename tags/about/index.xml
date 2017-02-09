@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on masayk.github.io</title>
+    <link>http://masayk.github.io/tags/about/index.xml</link>
+    <description>Recent content in About on masayk.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>masayk All rights reserved.</copyright>
+    <atom:link href="http://masayk.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://masayk.github.io/about/</link>
+      <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://masayk.github.io/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;profile-of-masayk&#34;&gt;Profile of masayk&lt;/h1&gt;
+
+&lt;h2 id=&#34;personal-data&#34;&gt;Personal data&lt;/h2&gt;
+
+&lt;h3 id=&#34;screenname&#34;&gt;Screenname&lt;/h3&gt;
+
+&lt;p&gt;masayk&lt;/p&gt;
+
+&lt;h3 id=&#34;location-of-work&#34;&gt;Location of work&lt;/h3&gt;
+
+&lt;p&gt;Nagakute, Aichi, Japan&lt;/p&gt;
+
+&lt;h3 id=&#34;occupations&#34;&gt;Occupations&lt;/h3&gt;
+
+&lt;h3 id=&#34;sex&#34;&gt;Sex&lt;/h3&gt;
+
+&lt;p&gt;male&lt;/p&gt;
+
+&lt;h3 id=&#34;birthday&#34;&gt;Birthday&lt;/h3&gt;
+
+&lt;p&gt;1984-08-28&lt;/p&gt;
+
+&lt;h2 id=&#34;skill-set&#34;&gt;Skill set&lt;/h2&gt;
+
+&lt;h3 id=&#34;programming-language&#34;&gt;Programming Language&lt;/h3&gt;
+
+&lt;p&gt;PHP
+JavaScript
+Java
+Python&lt;/p&gt;
+
+&lt;h3 id=&#34;version-control-system&#34;&gt;Version Control System&lt;/h3&gt;
+
+&lt;p&gt;Git&lt;/p&gt;
+
+&lt;h3 id=&#34;database&#34;&gt;Database&lt;/h3&gt;
+
+&lt;p&gt;Oracle
+MySQL&lt;/p&gt;
+
+&lt;h2 id=&#34;interest-to&#34;&gt;Interest to&lt;/h2&gt;
+
+&lt;h3 id=&#34;development-tool&#34;&gt;Development tool&lt;/h3&gt;
+
+&lt;p&gt;Emacs&lt;/p&gt;
+
+&lt;h3 id=&#34;piano&#34;&gt;Piano&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Classical&lt;/p&gt;
+
+&lt;p&gt;Chopin, Bach&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Jazz&lt;/p&gt;
+
+&lt;p&gt;Bill Evans, Red Garland, Beegie Adair&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;podcast&#34;&gt;Podcast&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rebuild.fm/&#34;&gt;http://rebuild.fm/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yomefm.github.io/&#34;&gt;https://yomefm.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bilingualnews.libsyn.com/&#34;&gt;http://bilingualnews.libsyn.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

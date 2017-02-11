@@ -22,22 +22,33 @@
 
 &lt;p&gt;&lt;a href=&#34;http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&#34;&gt;http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;del&gt;I changed the following parts.&lt;/del&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (setq blog (org-export-as backend t))
++ (setq blog (org-export-as backend))
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h1 id=&#34;theme&#34;&gt;theme&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/rakuishi/hugo-zen&#34;&gt;https://github.com/rakuishi/hugo-zen&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd themes
+$ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h1 id=&#34;write&#34;&gt;write&lt;/h1&gt;
 
-&lt;pre&gt;&lt;code&gt;\* Blogging with Org-Mode and Hugo
-:PROPERTIES:
-:TITLE:    Blogging with Org-Mode and Hugo
-:HUGO_TAGS: hugo, emacs
-:HUGO_TOPICS: tech
-:HUGO_FILE: tech/hugo.md
-:HUGO_DATE: [2017-02-09 Thu 21:43]
-:END:
+&lt;pre&gt;&lt;code&gt;*　Blogging with Org-Mode and Hugo
+   :PROPERTIES:
+   :TITLE:    Blogging with Org-Mode and Hugo
+   :HUGO_TAGS: hugo, emacs
+   :HUGO_TOPICS: tech
+   :HUGO_FILE: tech/hugo.md
+   :HUGO_DATE: [2017-02-09 Thu 21:43]
+   :END:
+**　hugo.el　
+    ....
 
-hogehoge
+**　theme
+    ....
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h1 id=&#34;export&#34;&gt;export&lt;/h1&gt;
@@ -46,8 +57,7 @@ hogehoge
 
 &lt;h1 id=&#34;check&#34;&gt;check&lt;/h1&gt;
 
-&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hugo-zen --buildDrafts --watch
-$ hugo server --theme=vienna --buildDrafts --watch
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hpstr --buildDrafts --watch
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://127.0.0.1:1313&#34;&gt;http://127.0.0.1:1313&lt;/a&gt;&lt;/p&gt;

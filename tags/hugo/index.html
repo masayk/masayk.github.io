@@ -1,57 +1,201 @@
 <!DOCTYPE html>
-<html lang="ja">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
+<title>Hugo &#8211; masayk.github.io</title>
+<meta name="description" content="">
+
+    
+
+
+
+
+
+
+
+<meta name="twitter:title" content="Hugo">
+<meta name="twitter:description" content="">
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hugo">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://masayk.github.io/tags/hugo/">
+<meta property="og:site_name" content="masayk.github.io">
+
+
+
+  <meta property="og:updated_time" content="2017-02-09T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+<link rel="canonical" href="http://masayk.github.io/tags/hugo/">
+
+  <link href="http://masayk.github.io/tags/hugo/index.xml" rel="alternate" type="application/rss+xml" title="masayk.github.io" />
+  <link href="http://masayk.github.io/tags/hugo/index.xml" rel="feed" type="application/rss+xml" title="masayk.github.io" />
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
 <meta name="generator" content="Hugo 0.18.1" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/skeleton.css">
-<link rel="stylesheet" href="/css/custom.css">
-<link rel="alternate" href="/index.xml" type="application/rss+xml" title="masayk.github.io">
-<title>Hugo - masayk.github.io</title>
+
+<script src="/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<link rel="shortcut icon" href="/favicon.png">
+
+
 </head>
-<body>
 
-<div class="container">
-
-	<header role="banner">
-		<div class="header-logo">
-			<a href="/"><img src="" width="60" height="60" alt="masayk.github.io"></a>
-		</div>
-		
-	</header>
-
-
-	<main role="main">
-		<h1 class="list-title">Hugo</h1>
-
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="/tech/hugo/">Blogging with Org-Mode and Hugo</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-02-09">February 09, 2017</time></span>
-		</article>
-
-	</main>
+<body id="post-index" >
+<div class="entry-header">
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+	  <h1><a href="/" title="Go to the homepage">masayk.github.io</a></h1>
+	  <h2>
+        
+        
+        
+        
+        
+        
+        
+        
+      </h2>
+    </div>
 
 
-	<footer role="contentinfo">
-		<div class="hr"></div>
-		<div class="footer-link">
-			
-			<a href="https://twitter.com/masayk" target="_blank">Twitter</a>
-			
-			<a href="https://github.com/masayk/" target="_blank">GitHub</a>
-		</div>
-		<div class="copyright">Copyright &copy; masayk All rights reserved.</div>
-	</footer>
+    <ul>
+	  
+	  <li><a href="/about/"><i class="fa fa-fw fa-info"></i> About</a></li>
 
+	  
+	  <li>
+		<a href="https://twitter.com/masayk"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+	  </li>
+	  
+	  
+	  
+	  <li>
+		<a href="https://github.com/masayk"><i class="fa fa-fw fa-github"></i> GitHub</a>
+	  </li>
+	  
+	  
+	  
+	  
+	  
+    </ul>
+
+
+  </div>
 </div>
 
 
+<div id="main" role="main">
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<article class="hentry">
+
+    <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2017-02-09 00:00:00 &#43;0000 UTC"><a href="/tech/hugo/">Feb 9, 2017</a></time></span>
+        
+      
+    </div>
+    
+	<h1 class="entry-title"><a href="/tech/hugo/" rel="bookmark" title="Blogging with Org-Mode and Hugo" itemprop="url">Blogging with Org-Mode and Hugo</a></h1>
+    
+  </header>
+
+
+  <div class="entry-content">
+    
+
+<h1 id="hugo-el">hugo.el</h1>
+
+<p><a href="http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/">http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/</a></p>
+
+<p><del>I changed the following parts.</del></p>
+
+<pre><code>- (setq blog (org-export-as backend t))
++ (setq blog (org-export-as backend))
+</code></pre>
+
+<h1 id="theme">theme</h1>
+
+<pre><code>$ cd themes
+$ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
+</code></pre>
+
+<h1 id="write">write</h1>
+
+<pre><code>*　Blogging with Org-Mode and Hugo
+   :PROPERTIES:
+   :TITLE:    Blogging with Org-Mode and Hugo
+   :HUGO_TAGS: hugo, emacs
+   :HUGO_TOPICS: tech
+   :HUGO_FILE: tech/hugo.md
+   :HUGO_DATE: [2017-02-09 Thu 21:43]
+   :END:
+**　hugo.el　
+    ....
+
+**　theme
+    ....
+</code></pre>
+
+<h1 id="export">export</h1>
+
+<p>M-x hugo</p>
+
+<h1 id="check">check</h1>
+
+<pre><code>$ hugo server --theme=hpstr --buildDrafts --watch
+</code></pre>
+
+<p><a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a></p>
+
+  </div>
+</article>
+
+
+
+
+
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>masayk All rights reserved. Powered by <a href="https://gohugo.io/" rel="nofollow">Hugo</a> using the <a href="https://github.com/dldx/hpstr-hugo-theme" rel="nofollow">HPSTR</a> theme.</span>
+
+  </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/js/scripts.min.js"></script>
+
+
 
 </body>
 </html>
+

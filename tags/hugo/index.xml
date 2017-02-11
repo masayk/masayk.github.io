@@ -17,23 +17,23 @@
       <guid>http://masayk.github.io/tech/hugo/</guid>
       <description>
 
-&lt;h1 id=&#34;hugo-el&#34;&gt;hugo.el&lt;/h1&gt;
+&lt;h2 id=&#34;hugo-el&#34;&gt;hugo.el&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&#34;&gt;http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;del&gt;I changed the following parts.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;I changed the following parts.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;- (setq blog (org-export-as backend t))
 + (setq blog (org-export-as backend))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;theme&#34;&gt;theme&lt;/h1&gt;
+&lt;h2 id=&#34;theme&#34;&gt;theme&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd themes
 $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;write&#34;&gt;write&lt;/h1&gt;
+&lt;h2 id=&#34;write&#34;&gt;write&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;*　Blogging with Org-Mode and Hugo
    :PROPERTIES:
@@ -50,16 +50,33 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
     ....
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;export&#34;&gt;export&lt;/h1&gt;
+&lt;h2 id=&#34;export&#34;&gt;export&lt;/h2&gt;
 
 &lt;p&gt;M-x hugo&lt;/p&gt;
 
-&lt;h1 id=&#34;check&#34;&gt;check&lt;/h1&gt;
+&lt;h2 id=&#34;check&#34;&gt;check&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ hugo server --theme=hpstr --buildDrafts --watch
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://127.0.0.1:1313&#34;&gt;http://127.0.0.1:1313&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;deploy&#34;&gt;deploy&lt;/h2&gt;
+
+&lt;p&gt;deploy.sh&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+rm -rf public/post/*
+
+hugo -t hpstr
+
+cd public
+
+git add -A
+git commit -m &amp;quot;Update public files&amp;quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

@@ -130,23 +130,23 @@
   <div class="entry-content">
     
 
-<h1 id="hugo-el">hugo.el</h1>
+<h2 id="hugo-el">hugo.el</h2>
 
 <p><a href="http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/">http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/</a></p>
 
-<p><del>I changed the following parts.</del></p>
+<p>I changed the following parts.</p>
 
 <pre><code>- (setq blog (org-export-as backend t))
 + (setq blog (org-export-as backend))
 </code></pre>
 
-<h1 id="theme">theme</h1>
+<h2 id="theme">theme</h2>
 
 <pre><code>$ cd themes
 $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 </code></pre>
 
-<h1 id="write">write</h1>
+<h2 id="write">write</h2>
 
 <pre><code>*　Blogging with Org-Mode and Hugo
    :PROPERTIES:
@@ -163,16 +163,33 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
     ....
 </code></pre>
 
-<h1 id="export">export</h1>
+<h2 id="export">export</h2>
 
 <p>M-x hugo</p>
 
-<h1 id="check">check</h1>
+<h2 id="check">check</h2>
 
 <pre><code>$ hugo server --theme=hpstr --buildDrafts --watch
 </code></pre>
 
 <p><a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a></p>
+
+<h2 id="deploy">deploy</h2>
+
+<p>deploy.sh</p>
+
+<pre><code>#!/bin/bash
+
+rm -rf public/post/*
+
+hugo -t hpstr
+
+cd public
+
+git add -A
+git commit -m &quot;Update public files&quot;
+git push
+</code></pre>
 
   </div>
 </article>

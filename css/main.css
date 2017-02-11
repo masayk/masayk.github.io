@@ -2743,14 +2743,14 @@ h1 {
    ========================================================================== */
 a {
   text-decoration: none;
-  color: rgba(34, 34, 34, 0.8); }
+  color: #256fba; }
   a:visited {
-    color: rgba(85, 85, 85, 0.8); }
+    color: #65a2e0; }
   a:hover {
-    color: rgba(0, 0, 0, 0.8); }
+    color: #143c65; }
   a:focus {
     outline: thin dotted;
-    color: rgba(0, 0, 0, 0.8); }
+    color: #143c65; }
   a:hover, a:active {
     outline: 0; }
 
@@ -2779,8 +2779,8 @@ figcaption {
   text-indent: 0;
   font-size: 14px;
   font-size: 0.875rem;
-  background-color: #e8e8e8;
-  border: 1px solid #b5b5b5;
+  background-color: #f3f3f3;
+  border: 1px solid silver;
   border-radius: 3px; }
 
 /* 
@@ -2838,7 +2838,7 @@ pre.highlight {
   font-size: 0.75rem;
   line-height: 1.5;
   color: #d0d0d0;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #e6e6e6;
   background-color: #272822;
   border-radius: 3px;
   /* Comment */
@@ -3733,7 +3733,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #e8e8e8; }
+  background-color: #f3f3f3; }
 
 /* 
    Main content
@@ -3769,7 +3769,7 @@ body {
   margin-bottom: 1.625rem; }
   .entry-content p > a,
   .entry-content li > a {
-    border-bottom: 1px dotted rgba(162, 162, 162, 0.8); }
+    border-bottom: 1px dotted #e4effa; }
     .entry-content p > a:hover,
     .entry-content li > a:hover {
       border-bottom-style: solid; }
@@ -3781,6 +3781,18 @@ body {
     line-height: 1.8571;
     margin-bottom: 26px;
     margin-bottom: 1.625rem; }
+  .entry-content h2 {
+    margin: 0px; }
+  .entry-content h3 {
+    margin: 0px; }
+  .entry-content h4 {
+    margin: 0px; }
+  .entry-content p {
+    margin: 0px 0px 20px 0px; }
+  .entry-content ul {
+    margin: 0px 0px 20px 0px; }
+  .entry-content ol {
+    margin: 0px 0px 20px 0px; }
 
 /* 
    Entry header
@@ -3816,6 +3828,8 @@ body {
       .header-title h1 {
         font-size: 28px;
         font-size: 1.75rem; } }
+    .header-title h1 a {
+      color: rgba(34, 34, 34, 0.8); }
   .header-title h2 {
     margin: 0;
     font-size: 18px;
@@ -4066,7 +4080,7 @@ header .entry-meta {
   margin-bottom: 1.625rem; }
   .read-more-content p > a,
   .read-more-content li > a {
-    border-bottom: 1px dotted rgba(162, 162, 162, 0.8); }
+    border-bottom: 1px dotted #e4effa; }
     .read-more-content p > a:hover,
     .read-more-content li > a:hover {
       border-bottom-style: solid; }

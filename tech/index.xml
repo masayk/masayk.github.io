@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>masayk All rights reserved.</copyright>
-    <lastBuildDate>Thu, 09 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://masayk.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sass(Syntactically Awesome Style Sheets)</title>
+      <link>http://masayk.github.io/tech/sass/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://masayk.github.io/tech/sass/</guid>
+      <description>
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install sass
+$ sass -v
+Sass 3.4.23 (Selective Steve)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;partial-sass-files&#34;&gt;Partial Sass files&lt;/h2&gt;
+
+&lt;p&gt;A partial is simply a Sass file named with a leading underscore.
+You might name it something like _partial.scss.
+Sass partials are used with the @import directive.&lt;/p&gt;
+
+&lt;h2 id=&#34;sass-command&#34;&gt;Sass Command&lt;/h2&gt;
+
+&lt;h3 id=&#34;basic&#34;&gt;basic&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sass style.scss:style.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;with-watch-option&#34;&gt;with watch option&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sass --watch style:scss:style:css
+$ sass --watch main.scss:main.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
+
+&lt;h3 id=&#34;map-file&#34;&gt;.map file&lt;/h3&gt;
+
+&lt;p&gt;The .map file is a reverse map for the resulting CSS file, showing where each declaration came from in their original SCSS file.
+They are used be tools like Chrome&amp;rsquo;s DevTools when you are viewing the resulting web page.
+&lt;a href=&#34;https://teamtreehouse.com/community/when-i-type-sass-watch-it-creates-a-maincssmap-file-not-sure-what-that-is&#34;&gt;https://teamtreehouse.com/community/when-i-type-sass-watch-it-creates-a-maincssmap-file-not-sure-what-that-is&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Blogging with Org-Mode and Hugo</title>
@@ -18,23 +62,23 @@
       <guid>http://masayk.github.io/tech/hugo/</guid>
       <description>
 
-&lt;h1 id=&#34;hugo-el&#34;&gt;hugo.el&lt;/h1&gt;
+&lt;h2 id=&#34;hugo-el&#34;&gt;hugo.el&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&#34;&gt;http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;del&gt;I changed the following parts.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;I changed the following parts.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;- (setq blog (org-export-as backend t))
 + (setq blog (org-export-as backend))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;theme&#34;&gt;theme&lt;/h1&gt;
+&lt;h2 id=&#34;theme&#34;&gt;theme&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd themes
 $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;write&#34;&gt;write&lt;/h1&gt;
+&lt;h2 id=&#34;write&#34;&gt;write&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;*　Blogging with Org-Mode and Hugo
    :PROPERTIES:
@@ -51,16 +95,33 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
     ....
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;export&#34;&gt;export&lt;/h1&gt;
+&lt;h2 id=&#34;export&#34;&gt;export&lt;/h2&gt;
 
 &lt;p&gt;M-x hugo&lt;/p&gt;
 
-&lt;h1 id=&#34;check&#34;&gt;check&lt;/h1&gt;
+&lt;h2 id=&#34;check&#34;&gt;check&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ hugo server --theme=hpstr --buildDrafts --watch
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://127.0.0.1:1313&#34;&gt;http://127.0.0.1:1313&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;deploy&#34;&gt;deploy&lt;/h2&gt;
+
+&lt;p&gt;deploy.sh&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+rm -rf public/post/*
+
+hugo -t hpstr
+
+cd public
+
+git add -A
+git commit -m &amp;quot;Update public files&amp;quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

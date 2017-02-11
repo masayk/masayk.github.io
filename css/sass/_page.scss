@@ -44,6 +44,31 @@ body {
 			@include font-size(14);
 		}
 	}
+
+    h2 {
+        margin:0px;
+    }
+
+    h3 {
+        margin:0px;
+    }
+
+    h4 {
+        margin:0px;
+    }
+
+    p {
+        margin:0px 0px 20px 0px;
+    }
+
+    ul {
+        margin:0px 0px 20px 0px;
+    }
+
+    ol {
+        margin:0px 0px 20px 0px;
+    }
+
 }
 
 /* 
@@ -86,6 +111,11 @@ body {
 		@media #{$large} {
 			@include font-rem(28);
 		}
+
+        a {
+            color: $base-color;
+        }
+        
 	}
 
 	h2 {

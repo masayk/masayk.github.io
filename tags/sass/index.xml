@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sass on masayk.github.io</title>
+    <link>http://masayk.github.io/tags/sass/index.xml</link>
+    <description>Recent content in Sass on masayk.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>masayk All rights reserved.</copyright>
+    <atom:link href="http://masayk.github.io/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sass(Syntactically Awesome Style Sheets)</title>
+      <link>http://masayk.github.io/tech/sass/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://masayk.github.io/tech/sass/</guid>
+      <description>
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install sass
+$ sass -v
+Sass 3.4.23 (Selective Steve)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;partial-sass-files&#34;&gt;Partial Sass files&lt;/h2&gt;
+
+&lt;p&gt;A partial is simply a Sass file named with a leading underscore.
+You might name it something like _partial.scss.
+Sass partials are used with the @import directive.&lt;/p&gt;
+
+&lt;h2 id=&#34;sass-command&#34;&gt;Sass Command&lt;/h2&gt;
+
+&lt;h3 id=&#34;basic&#34;&gt;basic&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sass style.scss:style.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;with-watch-option&#34;&gt;with watch option&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sass --watch style:scss:style:css
+$ sass --watch main.scss:main.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
+
+&lt;h3 id=&#34;map-file&#34;&gt;.map file&lt;/h3&gt;
+
+&lt;p&gt;The .map file is a reverse map for the resulting CSS file, showing where each declaration came from in their original SCSS file.
+They are used be tools like Chrome&amp;rsquo;s DevTools when you are viewing the resulting web page.
+&lt;a href=&#34;https://teamtreehouse.com/community/when-i-type-sass-watch-it-creates-a-maincssmap-file-not-sure-what-that-is&#34;&gt;https://teamtreehouse.com/community/when-i-type-sass-watch-it-creates-a-maincssmap-file-not-sure-what-that-is&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
